@@ -11,8 +11,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var scoreTxt: UITextField!
-
+    
+    //Score Label
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +42,12 @@ class ViewController: UIViewController {
 
         // Assign (the now random) strings at index 1..2 to UIImage buttons.
         button1.setImage(UIImage(named: pokemonList[0]), for: UIControlState())
+        
+        
+        
+        button2.setImage(UIImage(named: pokemonList[1]), for: UIControlState())
+        
+        button3.setImage(UIImage(named: pokemonList[2]), for: UIControlState())
 
 
         
@@ -59,8 +69,10 @@ class ViewController: UIViewController {
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
         present(ac, animated: true, completion: nil)
         
-        scoreTxt.text = "Your score is"// \(score)"
+        scoreLabel.text = "score = \(score)"
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

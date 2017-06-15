@@ -21,28 +21,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-wW-yPi">
-                                <rect key="frame" x="155" y="313" width="64" height="64"/>
+                                <rect key="frame" x="155" y="355" width="64" height="64"/>
                                 <state key="normal" image="raichu.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4C-G4-IxH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyi-Ap-OGf">
-                                <rect key="frame" x="155" y="220" width="64" height="64"/>
+                                <rect key="frame" x="155" y="263" width="64" height="64"/>
                                 <state key="normal" image="pikachu.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xg6-NF-ric"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZa-aS-Gaz">
-                                <rect key="frame" x="155" y="129" width="64" height="64"/>
+                                <rect key="frame" x="155" y="168" width="64" height="64"/>
                                 <state key="normal" image="pichu.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wl8-bD-bfn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scoreTxt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-l7-wq9">
-                                <rect key="frame" x="157" y="100" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-l7-wq9">
+                                <rect key="frame" x="146" y="72" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -64,6 +64,7 @@
                         <outlet property="button1" destination="BZa-aS-Gaz" id="aJL-xB-F5q"/>
                         <outlet property="button2" destination="lyi-Ap-OGf" id="cHX-Ow-JJW"/>
                         <outlet property="button3" destination="4G9-wW-yPi" id="c7V-Cd-DF3"/>
+                        <outlet property="scoreLabel" destination="gkw-l7-wq9" id="oUX-wH-uPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
